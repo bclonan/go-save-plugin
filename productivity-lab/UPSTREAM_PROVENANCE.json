@@ -1,0 +1,43 @@
+{
+  "verifiedDate": "2026-09-30",
+  "method": "GitHub API metadata and upstream license files fetched at pinned release tags",
+  "note": "Star counts are dated snapshots, not usage metrics or a guarantee of growth. Preserve full upstream license notices. Product adaptations have no upstream endorsement.",
+  "projects": [
+    {
+      "app": "csv-rescue",
+      "upstream": "https://github.com/mholt/PapaParse",
+      "tag": "5.7.0",
+      "packageVersion": "5.7.0",
+      "spdx": "MIT",
+      "licenseFile": "LICENSE",
+      "licenseUrl": "https://github.com/mholt/PapaParse/blob/5.7.0/LICENSE",
+      "licenseBlobSha": "12f5b3503d99c72a03b654ac1b7ac51d6c408a05",
+      "stars": 13579,
+      "metadataUrl": "https://api.github.com/repos/mholt/PapaParse"
+    },
+    {
+      "app": "pocket-pdf",
+      "upstream": "https://github.com/Hopding/pdf-lib",
+      "tag": "v1.17.1",
+      "packageVersion": "1.17.1",
+      "spdx": "MIT",
+      "licenseFile": "LICENSE.md",
+      "licenseUrl": "https://github.com/Hopding/pdf-lib/blob/v1.17.1/LICENSE.md",
+      "licenseBlobSha": "7a237e68e37abe7ac934c4e89f49e1a94f161f33",
+      "stars": 8650,
+      "metadataUrl": "https://api.github.com/repos/Hopding/pdf-lib"
+    },
+    {
+      "app": "instant-slides",
+      "upstream": "https://github.com/gitbrent/PptxGenJS",
+      "tag": "v4.0.1",
+      "packageVersion": "4.0.1",
+      "spdx": "MIT",
+      "licenseFile": "LICENSE",
+      "licenseUrl": "https://github.com/gitbrent/PptxGenJS/blob/v4.0.1/LICENSE",
+      "licenseBlobSha": "0b21750ad94fcfc08e723c81d337fd66e5b35964",
+      "stars": 6206,
+      "metadataUrl": "https://api.github.com/repos/gitbrent/PptxGenJS"
+    }
+  ]
+}

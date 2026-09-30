@@ -1,0 +1,31 @@
+name: Productivity apps
+on:
+  push:
+    branches: ['codex/productivity-apps-2026-09-30']
+    paths: ['productivity-lab/**', '.github/workflows/productivity-apps.yml']
+  pull_request:
+    paths: ['productivity-lab/**', '.github/workflows/productivity-apps.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [csv-rescue, pocket-pdf, instant-slides]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node productivity-lab/scripts/materialize.mjs
+      - run: npm install --ignore-scripts --no-audit --no-fund
+        working-directory: productivity-lab/apps/${{ matrix.app }}
+      - run: npm test
+        working-directory: productivity-lab/apps/${{ matrix.app }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lockfile-${{ matrix.app }}
+          path: productivity-lab/apps/${{ matrix.app }}/package-lock.json

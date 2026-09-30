@@ -1,0 +1,23 @@
+{
+  "name": "csv-rescue-chatgpt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CSV Rescue MCP app for ChatGPT",
+  "license": "MIT",
+  "author": "Brad Clonan",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "express": "5.2.1",
+    "zod": "3.25.76",
+    "papaparse": "5.7.0"
+  },
+  "devDependencies": {}
+}
