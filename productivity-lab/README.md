@@ -10,6 +10,8 @@ Three independent MCP app MVPs by Brad Clonan. Each produces a useful file you c
 
 These are modern tool-based MCP integrations. They do not use the retired legacy ChatGPT plugin manifest. ChatGPT supplies the conversational reasoning; the servers perform deterministic document operations, with no paid AI API dependency. A ChatGPT connection and a public directory listing are separate from having source code.
 
+See [validation and delivery status](VALIDATION.md) for checks performed and remaining blockers.
+
 ## Run an app
 
 Install Node 22+ and clone this branch, then:
